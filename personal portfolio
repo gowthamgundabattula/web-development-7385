@@ -1,1 +1,186 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gowtham | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">My Portfolio</h2>
+
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="home">
+    <div class="home-content">
+        <h1>Hello, I'm <span>Gowtham</span></h1>
+        <h2>B.Tech Student</h2>
+        <p>Welcome to my personal portfolio website.</p>
+        <a href="#profile" class="btn">Explore More</a>
+    </div>
+</section>
+
+<!-- Profile Section -->
+<section id="profile">
+    <h1 class="heading">My Profile</h1>
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            My name is Gowtham. I am a B.Tech student.
+            I am interested in programming, web development
+            and new technologies. My goal is to become a
+            successful software developer.
+        </p>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education">
+    <h1 class="heading">Educational Qualifications</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>B.Tech</h2>
+            <p>College: Your College Name</p>
+            <p>Branch: Computer Science</p>
+            <p>Year: 2026 - Present</p>
+        </div>
+
+        <div class="card">
+            <h2>Intermediate</h2>
+            <p>College: Your Junior College</p>
+            <p>Group: MPC</p>
+            <p>Year: 2024 - 2026</p>
+        </div>
+
+        <div class="card">
+            <h2>SSC</h2>
+            <p>School: Your School Name</p>
+            <p>Year: 2024</p>
+        </div>
+    </div>
+</section>
+
+<!-- Technical Skills -->
+<section id="skills">
+    <h1 class="heading">Technical Skills</h1>
+
+    <div class="container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">C Programming</div>
+    </div>
+</section>
+
+<!-- Hobbies -->
+<section id="hobbies">
+    <h1 class="heading">My Hobbies</h1>
+
+    <div class="container">
+        <div class="card">📚 Reading Books</div>
+        <div class="card">🏏 Playing Cricket</div>
+        <div class="card">🎵 Listening to Music</div>
+        <div class="card">💻 Learning Technology</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h1 class="heading">My Projects</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>Personal Portfolio</h2>
+            <p>A website to display personal details and skills.</p>
+        </div>
+
+        <div class="card">
+            <h2>Student Management System</h2>
+            <p>A Python project to manage student information.</p>
+        </div>
+
+        <div class="card">
+            <h2>Task List</h2>
+            <p>A web application to manage daily tasks.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Achievements -->
+<section id="achievements">
+    <h1 class="heading">Achievements</h1>
+
+    <div class="card">
+        <p>🏆 Participated in technical competitions.</p>
+        <p>🏆 Completed programming courses.</p>
+        <p>🏆 Developed academic projects.</p>
+    </div>
+</section>
+
+<!-- Resume -->
+<section id="resume">
+    <h1 class="heading">My Resume</h1>
+    <p>Download my resume using the button below.</p>
+
+    <a href="resume.pdf" download class="btn">
+        Download Resume
+    </a>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h1 class="heading">Contact Me</h1>
+
+    <div class="contact-box">
+        <p>Email: yourmail@gmail.com</p>
+        <p>Phone: +91 XXXXXXXXXX</p>
+        <p>Location: Andhra Pradesh, India</p>
+
+        <form onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <textarea placeholder="Enter Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Gowtham | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
